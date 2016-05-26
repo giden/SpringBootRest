@@ -22,6 +22,8 @@ public class Comment implements Serializable {
 	
 	private Long bandId;
 	
+	private Long albumId;
+	
 	public Long getId() {
 		return id;
 	}
@@ -45,5 +47,11 @@ public class Comment implements Serializable {
 	}
 	public void setBandId(Long bandId) {
 		this.bandId = bandId;
+	}
+	public Long getAlbumId() {
+		return albumId;
+	}
+	public void setAlbumId(Long albumId) {
+		this.albumId = albumId;
 	}
 }
