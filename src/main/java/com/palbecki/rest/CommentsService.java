@@ -23,7 +23,7 @@ public class CommentsService {
 	CommentRepository commentRepository;
 
     @RequestMapping(value="/{id}", method=RequestMethod.GET)
-    public Comment getCommentByUser(@PathVariable Long id) {
+    public Comment getCommentById(@PathVariable Long id) {
 		return commentRepository.findOne(id);
     }
 
